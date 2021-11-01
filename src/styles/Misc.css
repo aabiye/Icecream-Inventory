@@ -1,0 +1,241 @@
+ button {
+    color: white;
+    /* font: 15px Futura, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-self: center;
+    background: #333;
+    margin: 0px 0px 0px;
+    padding: 10px 25px
+  }
+
+  #card {
+  
+    border: 3px solid	 #333;
+      margin: 2px;
+    margin-bottom: 30px;
+  
+  }
+  #bnames {
+    font-family: "Lucida Handwriting";
+    text-align: center;
+    color:  #333;
+    font-size: 25px;
+    }
+
+
+    /*to design the cards*/
+
+#todoWrapper {
+  margin-top: 100px;
+}
+
+.todo_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.todo {
+  background-color: rgb(139, 53, 139);
+  text-align: center;
+}
+
+.inprogress {
+  background-color: rgb(209, 121, 20);
+  text-align: center;
+}
+
+.complete {
+  background-color: rgb(16, 131, 16);
+  text-align: center;
+}
+
+.todos_list {
+  width: 31%;
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo_card {
+  width: 100%;
+  height: auto;
+  color: #276c91;
+  background: black;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+/* the second method design*/
+
+.container {
+  width: 70vw;
+  height: 90vh;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.container .form_todo {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .form_todo .form-control {
+  width: 87%;
+  height: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+.container .form_todo .btn {
+  width: 10%;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background: transparent;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+.container .form_todo .btn:hover {
+  background: black;
+  color: #276c91;
+}
+
+.todos_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.todo_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  width: 80%;
+}
+
+.todos_list {
+  width: 31%;
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+}
+.todo_card {
+  width: 80%;
+  height: auto;
+  color: black;
+  background: white;
+  padding: 2px 5px;
+  border: 2px solid black;
+  border-radius: 16px;
+  margin-top: 3px;
+  margin-right: 6px;
+}
+.card_text {
+  margin: auto;
+}
+
+.icon-check-todo {
+  background: #276c91;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icon-trash-todo {
+  background: red;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.progress_card {
+  width: 80%;
+  height: auto;
+  color: #000000;
+  padding: 2px 5px;
+  border: 2px solid rgb(209, 121, 20);
+  border-radius: 16px;
+  margin-top: 3px;
+}
+.icon-progress-todo {
+  background: black;
+  color: green;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.completed_card {
+  width: 80%;
+  height: auto;
+  color: black;
+  padding: 2px 5px;
+  border: 2px solid rgb(16, 131, 16);
+  border-radius: 16px;
+  margin-top: 3px;
+}
+
+.bxs-trash {
+  color: rgb(24, 7, 7);
+}
+
+.bxs-check-square {
+  color: rgb(16, 131, 16);
+}
+
+
+/*responsive design*/
+@media screen and (min-width: 100em) {
+  .outter-card {
+    flex: 0 1 calc(23% - 1em);
+    border: 2px solid white; 
+    padding: 15px 15px 15px 15px; 
+    margin: auto;
+    width: 60%;
+    
+  }
+}
+
+/*responsive design*/
+.home {
+  margin-left:  auto;
+  margin-right:  auto;
+  max-width: 1500px;
+}
+
+.home__image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));  /*to fade it*/
+  z-index: -1;
+  margin-bottom: -150px;
+
+
+}
+
+#card-imgs{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
